@@ -1,0 +1,137 @@
+body {
+    background: linear-gradient(to bottom, #f9f7fe, #e7c2e2);
+    /* Light background with a gradient effect */
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    color: #885df1;
+    /* Purple */
+}
+
+.weather-app {
+    background: #ffffff;
+    /* White background for the app container */
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+header {
+    border-bottom: 1px solid #f9f7fe;
+    padding-bottom: 30px;
+}
+
+.search-input {
+    background-color: #f9f7fe;
+    /* Light background for the input */
+    border: 2px solid #885df1;
+    /* Purple border */
+    color: rgba(39, 33, 66, 0.8);
+    /* Darker text color */
+    font-size: 16px;
+    padding: 20px;
+    width: 75%;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+    /* Smooth transition for border color */
+}
+
+.search-input:focus {
+    border-color: #f65282;
+    /* Pink border on focus */
+    outline: none;
+    /* Remove outline */
+}
+
+.search-button {
+    margin-left: 5px;
+    font-size: 16px;
+    background-color: #885df1;
+    /* Purple button */
+    color: white;
+    /* White text */
+    border: none;
+    /* No border */
+    padding: 20px;
+    line-height: 1;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color */
+}
+
+.search-button:hover {
+    background-color: #f65282;
+    /* Pink hover effect */
+}
+
+main {
+    padding: 30px 0;
+}
+
+.current-temperature {
+    font-size: 48px;
+    color: #f65282;
+    /* Pink text for temperature */
+}
+
+.current-weather {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f9f7fe;
+    /* Subtle separation */
+    padding-bottom: 15px;
+    /* Space below the weather section */
+}
+
+.current-city {
+    font-size: 38px;
+    font-weight: 900;
+    margin: 0;
+    color: #885df1;
+    /* Purple for city */
+}
+
+.current-details {
+    color: rgba(39, 33, 66, 0.6);
+    /* Slightly darker for readability */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.current-details strong {
+    color: #f65282;
+    /* Pink for strong elements */
+}
+
+.current-temperature-icon {
+    position: relative;
+    top: -8px;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.current-temperature-value {
+    font-size: 80px;
+    font-weight: bold;
+    color: #885df1;
+    /* Purple text for temperature value */
+}
+
+.current-temperature-unit {
+    font-size: 28px;
+    position: relative;
+    top: -38px;
+}
+
+footer {
+    border-top: 1px solid #f9f7fe;
+    text-align: center;
+    padding-top: 15px;
+    color: rgba(39, 33, 66, 0.4);
+}
